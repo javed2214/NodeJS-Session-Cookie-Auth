@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+
+    <style>
+        .textInp {
+            width: 35% !important;
+        }
+    </style>
+
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div style="text-align: center;">
+        <br><br>
+        <form action="/api/add" method="POST" autocomplete="off">
+            <input class="textInp" type="text" name="title" placeholder="Title" required> <br><br>
+            <textarea class="textInp" name="description" cols="30" style="height: 200px;" placeholder="Description"></textarea> <br><br>
+            <button class="btn red" type="submit">Add Post</button>
+        </form>
+        <br>
+        <form action="/api/logout" method="POST">
+            <button class="btn dark-blue" type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+
+    <style>
+        .textInp {
+            width: 35% !important;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>Register</h2><br>
+        <form action="/api/register" method="POST" autocomplete="off">
+            <input class="textInp" type="text" name="username" placeholder="Username" required> <br><br>
+            <input class="textInp" type="text" name="email" placeholder="Email" required> <br><br>
+            <input class="textInp" type="password" name="password" placeholder="Password" required> <br><br>
+            <button class="btn red" type="submit">Register</button>
+        </form>
+        <br><br>
+        <a style="font-size: 20px;" href="/api/login">Login</a>
+    </div>
+</body>
+</html>
